@@ -1,0 +1,85 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container utama kalkulator */
+.container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+/* Area layar */
+.screen_wrap {
+  margin-bottom: 20px;
+}
+
+.screen_container {
+  background-color: #111;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.histori {
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+.screen {
+  font-size: 28px;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+/* Grid tombol */
+.btn_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+/* Tombol "=" bisa diberi warna berbeda */
+.btn:last-child {
+  background-color: #007bff;
+}
+
+.btn:last-child:hover {
+  grid-row: 1 span 2;
+  background-color: #0056b3;
+}
