@@ -97,13 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (historiVisible) {
         historiDiv.classList.add('show');
-        document.querySelector('.container').classList.add('shift-right');
-        btnClock.classList.add('follow');
         updateHistoryUI();
     } else {
         historiDiv.classList.remove('show');
-        document.querySelector('.container').classList.remove('shift-right');
-        btnClock.classList.remove('follow');
     }
 }
 

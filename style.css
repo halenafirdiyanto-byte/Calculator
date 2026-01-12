@@ -28,10 +28,8 @@ body {
 
 .btn_outside{
   position: absolute;
-  z-index: 9999;
   left: -40px;
-  top: 20px;
-  color: whitesmoke;
+  color: white;
   padding: 12px 14px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -58,20 +56,13 @@ body {
 }
 
 .histori {
-  top: -500;
-  right: -100;
-
   width: 250px;
   height: 450px;
-
   background: #222;
   color: white;
   padding: 15px;
-
   z-index: -1;                 
   opacity: 0;                  
-  pointer-events: none;
-
   border-radius: 14px;
   transition: opacity 0.3s ease;
 }
@@ -86,22 +77,14 @@ body {
 
 .histori .item {
   padding: 8px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #d3d5d7;
   margin-bottom: 5px;
   cursor: pointer;
 }
 
 .histori .item:hover {
-    background: rgba(0,0,0,0.1);
+  background: #554e4e;
 }
-
-.histori .btn-delete{
-  padding: 1px;
-  opacity: 1;
-  color: white;
-}
-
-
 
 
 .screen {
@@ -109,8 +92,6 @@ body {
   font-weight: bold;
   padding: 2px;
   text-align: right;
-  word-wrap: break-word;
-  min-height: 24px;
 }
 
 
@@ -173,6 +154,11 @@ body {
   color: rgb(235, 223, 223);
 }
 
+.light-mode .btn:hover {
+  background:  #bc5a5c;
+  color: rgb(235, 223, 223);
+}
+
 .light-mode .btn_outside {
   background: #d09595;
   color: rgb(247, 247, 247);
@@ -182,6 +168,11 @@ body {
 .light-mode .btnn {
   background: #bc5a5c;
   color: rgb(235, 224, 224);
+}
+
+.light-mode .btnn:hover {
+  background:  #d09595;
+  color: rgb(235, 223, 223);
 }
 
 .light-mode .screen_container {
@@ -194,6 +185,9 @@ body {
   color: rgb(224, 215, 215);
   border-left: 2px solid #ccc;
 }
+.light-mode .histori .item:hover {
+  background: #bc5a5c ;
+}
 
 /* tema */
 body,
@@ -201,8 +195,7 @@ body,
 .screen_container,
 .btn,
 .btnn,
-.btn_outside,
-.btn_outside2 {
+.btn_outside {
   transition: background-color 1s ease,
               color 1s ease,
               border-color 1s ease;
@@ -224,12 +217,10 @@ body,
   100% { transform: translateX(0) scaleX(1); opacity: 1; }
 }
 
-.light-mode .btn_outside,
-.light-mode .btn_outside2 {
+.light-mode .btn_outside {
   animation: doorSlide 1.1s ease forwards;
 }
 
-body:not(.light-mode) .btn_outside,
-body:not(.light-mode) .btn_outside2 {
+body:not(.light-mode) .btn_outside {
   animation: doorSlideDark 1s ease forwards;
 }
