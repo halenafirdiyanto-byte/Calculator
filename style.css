@@ -65,6 +65,9 @@ body {
   opacity: 0;                  
   border-radius: 14px;
   transition: opacity 0.3s ease;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 
